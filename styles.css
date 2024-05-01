@@ -1,0 +1,200 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: #a19a9a; /* Set background color for the entire page */
+    color: green; /* Set the color of all text within the page to green */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #32a852;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav ul li a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Content section styles */
+section {
+    padding: 20px 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.black-box {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Styling for the clicked state */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px; /* Adjust as needed */
+    padding: 20px;
+    background-color: #fbf1b9;
+    color: #000;
+    z-index: 1000;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+}
+
+/* Hidden class for hiding elements */
+.hidden {
+    display: none;
+}
+
+/* Center the landing page content */
+.landing {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Video Container Styles */
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video is behind the content */
+}
+
+/* Video Styles */
+#video-bg {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Content Styles */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* Ensure the content is above the video */
+}
+
+.content .name {
+    font-size: 2.5rem;
+}
+
+#enterButton {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: #1dab58;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#enterButton:hover {
+    background-color: #0056b3;
+}
+
+/* New styles */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 100px; /* Adjust the width as needed */
+    text-align: center;
+    margin: 10px; /* Add spacing between skills */
+}
+
+.skill img {
+    width: 50px; /* Set the width of the skill logo */
+}
+
+.skill p {
+    margin-top: 5px;
+}
+
+
+/* Popup Content Style */
+.popup-content {
+    background-color: #000; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adding shadow effect */
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+}
